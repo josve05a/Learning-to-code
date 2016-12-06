@@ -32,9 +32,14 @@ var dead = prompt ("Is the author of this work dead? y/n");
 // countries
 switch (country) {
 	case "us":
-		UnitedStates();
+		unitedStates();
 		break;
 	default:
 		killFunction();
 		break;
+}
+
+// country-funtions
+function untitedStates() {
+	killFunction();
 }

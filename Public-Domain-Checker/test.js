@@ -11,9 +11,20 @@ function killFunction () {
 	exit();
 }
 
-// variables
+// variable
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
+// countries
+switch (country) {
+	case "us":
+		unitedStates();
+		break;
+	default:
+		killFunction();
+		break;
+}
+
+// variables
 var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication === "y" || publication === "yes") {
 		publicationFunction();	
@@ -30,15 +41,6 @@ var dead = prompt ("Is the author of this work dead? y/n");
 		killFunction();
 	}
 
-// countries
-switch (country) {
-	case "us":
-		unitedStates();
-		break;
-	default:
-		killFunction();
-		break;
-}
 
 // country-funtions
 function untitedStates() {

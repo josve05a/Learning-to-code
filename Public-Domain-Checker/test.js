@@ -1,11 +1,11 @@
-function death () {
-	prompt ("Which year did the author of the work die? If alive type FALSE");
+function deathFunction () {
+	var death	=	prompt ("Which year did the author of the work die? If alive type FALSE");
 }
 
 var country	=	prompt ("In which country was this file first published? (ISO-code, lower case)");
 var dead	=	prompt ("Is the author of this work dead? true/false");
 	if (dead == true) {
-		death();
+		deathFunction();
 	}
 var publication	=	prompt ("In which year was this first published?");
 

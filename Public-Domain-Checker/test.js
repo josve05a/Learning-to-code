@@ -1,4 +1,4 @@
-function death (); {
+function death () {
 	prompt ("Which year did the author of the work die? If alive type FALSE");
 }
 

@@ -3,6 +3,7 @@ var death;
 var published;
 var dead;
 var living;
+var b192363;
 
 // killing the tool
 function killFunction () {
@@ -56,3 +57,10 @@ function deathFunction () {
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
 /* ------------------------------------------------ */
+
+function tryAlternatives () {
+	var between192363 = prompt ("Was this published without a notice but not renewed within 28 years of first publication?");
+		if (between192363 === "y" || between192363 === "yes") {
+		b192363 = "yes";
+		deathFunction();
+}

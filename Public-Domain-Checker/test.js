@@ -9,16 +9,16 @@ function publicationFunction () {
 // variables
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
+var publication = prompt ("Is the publication year of this work known? y/n");
+	if (publication = "y" || "yes") {
+		publicationFunction();	
+	}
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead == "y" || "yes") {
 		deathFunction();
 	}
-	if (dead != "y" || "n" || "yes" || "no") {
-		"You did something wrong!"
-	}
-var publication = prompt ("Is the publication year of this work known? y/n");
-	if (publication = "y" || "yes") {
-		publicationFunction();	
+	if (dead == "n" || "no") {
+		livingFunction();
 	}
 
 // countries

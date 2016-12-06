@@ -4,7 +4,7 @@ if (balance < 0) {
 	alert("You have negative money! Welp!");
 }
 
-if (balance === 0) {
+if (balance == 0) {
 	alert("You have no cash brotha!");
 }
 

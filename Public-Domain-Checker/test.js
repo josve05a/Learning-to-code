@@ -8,7 +8,6 @@ var living;
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet :(")
 	throw new Error("Sorry, this hasn't been coded yet.")
-	exit();
 }
 
 // Country

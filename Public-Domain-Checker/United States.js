@@ -10,19 +10,6 @@ function killFunction () {
 	throw new Error("Sorry, this hasn't been coded yet.")
 }
 
-/* Country
-var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
-
-switch (country) {
-	case "us":
-		unitedStates();
-		break;
-	default:
-		unitedStates();
-		break;
-}
-*/
-
 // Publication year
 function publicationFunction() {
 publication = prompt ("Was this published before 1923? y/n");
@@ -48,24 +35,24 @@ function deathFunction () {
 }
 }
 
-// United States
-/* function unitedStates() { */
 	publicationFunction();
 	deathFunction();
 	// If we know death year
-//	if (dead == "yes") {
 		if (published == "pre-1923") {
 			alert("{{PD-old-1923-auto|deathyear=" + death + "}}");	
 			} else {
 			alert("{{PD-old-auto|deathyear=" + death + "}}");	
 			}
-//	}
+
 	// If we don't know the death year
 	if (living == "yes") {
 		if (published == "pre-1923") {
 		alert("{{PD-1923}}");	
 		} else {
-		killFunction();	
+		tryAlternatives();	
 		}
 	}
-/* } */
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */

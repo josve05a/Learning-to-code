@@ -7,7 +7,8 @@ function publicationFunction () {
 }
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet")
-	throw new Error("Something went badly wrong!");
+	throw new Error("Something went badly wrong!")
+	exit();
 }
 
 // variables

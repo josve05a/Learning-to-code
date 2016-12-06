@@ -23,17 +23,15 @@ switch (country) {
 }
 
 // Publication year
-function publication () {
-	prompt ("Is the publication year of this work known? y/n");
+var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication === "y" || publication === "yes") {
 		publicationFunction();	
-	}
-	if (publication === "y" || publication === "no") {
+	} else {
 			killFunction();
 	}
+		
 function publicationFunction () {
 	var published = prompt ("Which year was this work published?");
-}
 }
 
 // Death of author
@@ -52,5 +50,5 @@ function deathFunction () {
 // country-funtions
 //United States
 function unitedStates() {
-	publication();
+
 }

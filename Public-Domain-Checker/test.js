@@ -18,7 +18,7 @@ switch (country) {
 		unitedStates();
 		break;
 	default:
-		killFunction();
+		unitedStates();
 		break;
 }
 

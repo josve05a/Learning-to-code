@@ -7,6 +7,16 @@ function publicationFunction () {
 
 
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
+
+switch (country) {
+	case "us":
+		UnitedStates();
+		break;
+	default:
+		"Sorry, this hasn't been coded yet."
+	break;
+}
+
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead == "y" || "yes") {
 		deathFunction();
@@ -15,13 +25,5 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication = "y" || "yes") {
 		publicationFunction();	
 	}
-
-switch (country) {
-	case "us":
-		UnitedStates();
-		break;
-	default:
-		"Sorry, this hasn't been coded yet."
-}
 
 

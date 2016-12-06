@@ -1,6 +1,8 @@
 //global var's
 var death;
 var published;
+var dead;
+var living;
 
 // killing the tool
 function killFunction () {
@@ -38,11 +40,11 @@ function publicationFunction () {
 function deathFunction() {
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead === "y" || dead === "yes") {
+		dead = "yes";
 		deathFunction();
 	}
 	if (dead === "n" || dead === "no") {
-/*		livingFunction();	*/
-		killFunction();
+		living = "yes"
 	}
 function deathFunction () {
 	death = prompt ("Which year did the author of the work die?");
@@ -54,9 +56,19 @@ function deathFunction () {
 function unitedStates() {
 	publicationFunction();
 	deathFunction();
-	if (published < 1923) {
-		alert("{{PD-old-1923-auto|deathyear=" + death + "}}");	
+	//If we know death year
+	if (dead == "yes") {
+		if (published < 1923) {
+			alert("{{PD-old-1923-auto|deathyear=" + death + "}}");	
+			} else {
+			alert("{{PD-old-auto|deathyear=" + death + "}}");	
+			}
+	}
+	if (living == "yes") {
+		if (published < 1923) {
+		alert("{{PD-1923}}");	
 		} else {
-		alert("{{PD-old-auto|deathyear=" + death + "}}");	
+		killFunction();	
 		}
+	}
 }

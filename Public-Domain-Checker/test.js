@@ -14,17 +14,17 @@ function killFunction () {
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
 var publication = prompt ("Is the publication year of this work known? y/n");
-	if (publication == "y" || "yes") {
+	if (publication === "y" || publication === "yes") {
 		publicationFunction();	
 	}
-	if (publication == "n" || "no") {
+	if (publication === "y" || publication === "no") {
 			killFunction();
 	}
 var dead = prompt ("Is the author of this work dead? y/n");
-	if (dead == "y" || "yes") {
+	if (dead === "y" || dead === "yes") {
 		deathFunction();
 	}
-	if (dead == "n" || "no") {
+	if (dead === "n" || dead === "no") {
 /*		livingFunction();	*/
 		killFunction();
 	}

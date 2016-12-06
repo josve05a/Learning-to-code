@@ -14,10 +14,10 @@ function killFunction () {
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
 var publication = prompt ("Is the publication year of this work known? y/n");
-	if (publication = "y" || "yes") {
+	if (publication == "y" || "yes") {
 		publicationFunction();	
 	}
-	if (publication = "n" || "no") {
+	if (publication =) "n" || "no") {
 			killFunction();
 	}
 var dead = prompt ("Is the author of this work dead? y/n");

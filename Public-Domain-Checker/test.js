@@ -52,11 +52,11 @@ function deathFunction () {
 }
 
 // country-funtions
-//United States
+// United States
 function unitedStates() {
 	publicationFunction();
 	deathFunction();
-	//If we know death year
+	// If we know death year
 	if (dead == "yes") {
 		if (published < 1923) {
 			alert("{{PD-old-1923-auto|deathyear=" + death + "}}");	
@@ -64,6 +64,7 @@ function unitedStates() {
 			alert("{{PD-old-auto|deathyear=" + death + "}}");	
 			}
 	}
+	// If we don't know the death year
 	if (living == "yes") {
 		if (published < 1923) {
 		alert("{{PD-1923}}");	

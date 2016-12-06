@@ -1,10 +1,3 @@
-//functions
-function deathFunction () {
-	var death = prompt ("Which year did the author of the work die?");
-}
-function publicationFunction () {
-	var published = prompt ("Which year was this work published?");
-}
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet")
 	throw new Error("Something went badly wrong!")
@@ -32,6 +25,9 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication === "y" || publication === "no") {
 			killFunction();
 	}
+function publicationFunction () {
+	var published = prompt ("Which year was this work published?");
+}
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead === "y" || dead === "yes") {
 		deathFunction();
@@ -40,7 +36,9 @@ var dead = prompt ("Is the author of this work dead? y/n");
 /*		livingFunction();	*/
 		killFunction();
 	}
-
+function deathFunction () {
+	var death = prompt ("Which year did the author of the work die?");
+}
 
 // country-funtions
 function untitedStates() {

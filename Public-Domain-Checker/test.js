@@ -50,7 +50,6 @@ function deathFunction () {
 }
 }
 
-// country-funtions
 // United States
 function unitedStates() {
 	publicationFunction();

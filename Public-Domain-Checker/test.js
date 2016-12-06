@@ -5,11 +5,6 @@ function killFunction () {
 	exit();
 }
 
-// Range function
-function between(x, min, max) {
-  return x >= min && x <= max;
-}
-
 // Country
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
@@ -50,15 +45,5 @@ function deathFunction () {
 // country-funtions
 //United States
 function unitedStates() {
-if (death(between x, 0, 1922)) {
-    alert
-    ("Most likely \{\{PD\-old" + 
-	if (published(beteen(x, 0, 1922)) {
-	"\-1923"
-	} +
-    	"\|deathyear\=" +
-	death +
-	"\}\}");
-}
-}
+	
 }

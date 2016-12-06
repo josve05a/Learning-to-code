@@ -22,7 +22,6 @@ switch (country) {
 		break;
 	default:
 		"Sorry, this hasn't been coded yet."
-		break;
 }
 
 

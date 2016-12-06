@@ -1,8 +1,13 @@
-//killing the tool
+// killing the tool
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet")
 	throw new Error("Something went badly wrong!")
 	exit();
+}
+
+// Range function
+function between(x, min, max) {
+  return x >= min && x <= max;
 }
 
 // Country
@@ -18,7 +23,8 @@ switch (country) {
 }
 
 // Publication year
-var publication = prompt ("Is the publication year of this work known? y/n");
+function publication () {
+	prompt ("Is the publication year of this work known? y/n");
 	if (publication === "y" || publication === "yes") {
 		publicationFunction();	
 	}
@@ -27,6 +33,7 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	}
 function publicationFunction () {
 	var published = prompt ("Which year was this work published?");
+}
 }
 
 // Death of author
@@ -43,6 +50,7 @@ function deathFunction () {
 }
 
 // country-funtions
-function untitedStates() {
-	killFunction();
+//United States
+function unitedStates() {
+	publication();
 }

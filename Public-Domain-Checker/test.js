@@ -1,3 +1,7 @@
+//global var's
+var death;
+var published;
+
 // killing the tool
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet")
@@ -27,7 +31,7 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	}
 		
 function publicationFunction () {
-	var published = prompt ("Which year was this work published?");
+	published = prompt ("Which year was this work published?");
 }
 }
 // Death of author
@@ -41,7 +45,7 @@ var dead = prompt ("Is the author of this work dead? y/n");
 		killFunction();
 	}
 function deathFunction () {
-	var death = prompt ("Which year did the author of the work die?");
+	death = prompt ("Which year did the author of the work die?");
 }
 }
 
@@ -49,9 +53,10 @@ function deathFunction () {
 //United States
 function unitedStates() {
 	publicationFunction();
-	deathFunction(
-		if (death === "1998") {
-		alert("{{PD-old-auto|deathyear=1998}}");	
+	deathFunction();
+	if (published < 1923) {
+		alert("{{PD-old-1923-auto|deathyear=" + death + "}}");	
+		} else {
+		alert("{{PD-old-auto|deathyear=" + death + "}}");	
 		}
-	);
 }

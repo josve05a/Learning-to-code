@@ -3,8 +3,8 @@ function deathFunction () {
 }
 
 var country	=	prompt ("In which country was this file first published? (ISO-code, lower case)");
-var dead	=	prompt ("Is the author of this work dead? true/false");
-	if (dead == true) {
+var dead	=	prompt ("Is the author of this work dead? y/n");
+	if (dead == "y" || "yes") {
 		deathFunction();
 	}
 var publication	=	prompt ("In which year was this first published?");

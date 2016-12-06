@@ -1,13 +1,13 @@
+//killing the tool
 function killFunction () {
 	alert("Sorry, this hasn't been coded yet")
 	throw new Error("Something went badly wrong!")
 	exit();
 }
 
-// variable
+// Country
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
 
-// countries
 switch (country) {
 	case "us":
 		unitedStates();
@@ -17,7 +17,7 @@ switch (country) {
 		break;
 }
 
-// variables
+// Publication year
 var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication === "y" || publication === "yes") {
 		publicationFunction();	
@@ -28,6 +28,8 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 function publicationFunction () {
 	var published = prompt ("Which year was this work published?");
 }
+
+// Death of author
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead === "y" || dead === "yes") {
 		deathFunction();

@@ -5,6 +5,10 @@ function deathFunction () {
 function publicationFunction () {
 	var published = prompt ("Which year was this work published?");
 }
+function killFunction () {
+	alert("Sorry, this hasn't been coded yet")
+	throw new Error("Something went badly wrong!");
+}
 
 // variables
 var country = prompt ("In which country was this file first published? (ISO-code, lower case)");
@@ -14,12 +18,12 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 		publicationFunction();	
 	}
 	if (publication = "n" || "no") {
-			alert("Sorry, this hasn't been coded yet.");
+			killFunction();
 	}
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead == "y" || "yes") {
 /*		deathFunction();	*/
-		alert("Sorry, this hasn't been coded yet.");
+		killFunction();
 	}
 	if (dead == "n" || "no") {
 		livingFunction();
@@ -31,7 +35,6 @@ switch (country) {
 		UnitedStates();
 		break;
 	default:
-		alert("Sorry, this hasn't been coded yet.");
-	break;
+		killFunction();
+		break;
 }
-

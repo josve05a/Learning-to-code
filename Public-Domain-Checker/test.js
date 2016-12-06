@@ -49,8 +49,9 @@ function deathFunction () {
 //United States
 function unitedStates() {
 	publicationFunction();
-	deathFunction();
-	if (death === "1998") {
-	alert("{{PD-old-auto|deathyear=1998}}");	
-	}
+	deathFunction(
+		if (death === "1998") {
+		alert("{{PD-old-auto|deathyear=1998}}");	
+		}
+	);
 }

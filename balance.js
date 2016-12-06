@@ -6,6 +6,7 @@ if (balance < 0) {
 
 if (balance === 0) {
 	alert("You have no cash brotha!");
+}
 
 if (balance > 0) {
 	alert("You have got money! Woop-woop!");

@@ -13,10 +13,13 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	if (publication = "y" || "yes") {
 		publicationFunction();	
 	}
+	if (publication = "n" || "no") {
+			alert("Sorry, this hasn't been coded yet.");
+	}
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead == "y" || "yes") {
 /*		deathFunction();	*/
-		alert("Sorry, this hasn't been coded yet.")
+		alert("Sorry, this hasn't been coded yet.");
 	}
 	if (dead == "n" || "no") {
 		livingFunction();
@@ -28,6 +31,7 @@ switch (country) {
 		UnitedStates();
 		break;
 	default:
-		alert("Sorry, this hasn't been coded yet.")
+		alert("Sorry, this hasn't been coded yet.");
 	break;
 }
+

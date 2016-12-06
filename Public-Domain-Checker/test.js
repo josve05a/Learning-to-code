@@ -22,11 +22,11 @@ var publication = prompt ("Is the publication year of this work known? y/n");
 	}
 var dead = prompt ("Is the author of this work dead? y/n");
 	if (dead == "y" || "yes") {
-/*		deathFunction();	*/
-		killFunction();
+		deathFunction();
 	}
 	if (dead == "n" || "no") {
-		livingFunction();
+/*		livingFunction();	*/
+		killFunction();
 	}
 
 // countries

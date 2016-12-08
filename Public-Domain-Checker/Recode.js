@@ -1,9 +1,3 @@
-// killing the tool
-function killFunction () {
-	alert("Sorry, this hasn't been coded yet :(")
-	throw new Error("Sorry, this hasn't been coded yet.")
-}
-
 // variables
 var multipleValues = [];
 var published;
@@ -20,8 +14,8 @@ if (multipleValues[0] === "y" || multipleValues[0] === "yes") {
 
 if (multipleValues[1] === "alive" || multipleValues[1] === "ALIVE") {
 	deathyear = ""
+} else {
+	deathyear = "|deathyear=" + multipleValues[1]	
 }
 
-if (multipleValues[1].isNumber) {
-	alert ("It is a number. Congratulations.")
-}
+alert("{{PD-old-auto" + published + deathyear + "}}");
